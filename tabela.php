@@ -43,7 +43,7 @@ if(empty($rowTabela)){
                 foreach ($rowTabela as $linha){
                     echo '<tr>';
                     echo '<th scope="row">'.$linha['id_produto'].'</th>';
-                    echo '<td>'.$linha['name_prod'].'</td>';
+                    echo '<td>'.$linha['nome_produto'].'</td>';
                     echo '<td>'.$linha['qtd_produto'].'</td>';
                     echo '<td>'.$linha['valor_produto'].'</td>';
                     echo '<td>'.$linha['cat_produto'].'</td>';

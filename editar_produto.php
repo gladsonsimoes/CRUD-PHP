@@ -26,7 +26,10 @@ $rowTabela = $tabela->fetchAll();
     <div>
         <h1>Editar Produto</h1>
         <br>
-        <form action="CRUD/update_produto.php" method="post">
+        <form action="CRUD/UpdateProduto.php" method="post">
+
+            <input type="hidden" name='id_produto' value=<?php echo $rowTabela[0]['id_produto']?>>
+
             <div>
                 <label>Nome do Produto: </label>
                 <input type="text" name="nome_produto" value=<?php echo $rowTabela[0]['nome_produto'] ?>>
@@ -45,7 +48,9 @@ $rowTabela = $tabela->fetchAll();
             </div>
             <br>
             <div>
-                <input type="submit" value="SALVAR ALTERAÇÔES">
+                <button type="submit" >SALVAR ALTERAÇÔES</button>
+                
+                <a href="ReadProduto.php" >Tabela Produtos</a>
             </div>
         </form>
     </div>

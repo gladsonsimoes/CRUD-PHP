@@ -12,6 +12,6 @@
 
    echo "<script>
    alert('Usuário Deletado!');
-   window.location.href='../tabela.php';
+   window.location.href='../ReadProduto.php';
    </script>";
 ?>
